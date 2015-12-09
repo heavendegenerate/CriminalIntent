@@ -13,6 +13,8 @@ public class Crime {
 		mId = UUID.randomUUID();
 		mDate = new Date();
 	}
+	
+	
 
 	public String getTitle() {
 		return mTitle;
@@ -40,6 +42,13 @@ public class Crime {
 
 	public void setSolved(boolean mSolved) {
 		this.mSolved = mSolved;
+	}
+
+
+
+	@Override
+	public String toString() {		
+		return mTitle;
 	}
 	
 	
